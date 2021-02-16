@@ -148,3 +148,6 @@ _2015-2016_
 **Minsk State Higher Radiotechnical College**  
 Electronic computing facilities  
 _2007-2012_
+
+## English
+English A2, currently I learn for B1
