@@ -12,268 +12,477 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="home">
   <header class="header">
-    <div class="header-wrapper">
-      <a href="#" class="header-logo">
-        <img src="" alt="icon: logo" class="header-logo__img">
-      </a>
-      <nav class="header-nav">
-        <a href="#" class="header-nav__link">Contact</a>
-        <a href="#" class="header-nav__link">Summary</a>
-        <a href="#" class="header-nav__link">Skills</a>
-        <a href="#" class="header-nav__link">Code</a>
-        <a href="#" class="header-nav__link">Experience</a>
-        <a href="#" class="header-nav__link">Education</a>
-        <a href="#" class="header-nav__link">Languages</a>
-      </nav>
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="#home" class="header-logo">
+          <img src="src/assets/img/logo.png" alt="icon: logo" class="header-logo__img">
+        </a>
+        <nav class="header-nav">
+          <a href="#home" class="header-nav__link">Contact</a>
+          <a href="#summary" class="header-nav__link">Summary</a>
+          <a href="#skills" class="header-nav__link">Skills</a>
+          <a href="#code" class="header-nav__link">Code</a>
+          <a href="#experience" class="header-nav__link">Experience</a>
+          <a href="#education" class="header-nav__link">Education</a>
+          <a href="#languages" class="header-nav__link">Languages</a>
+        </nav>
+        <button class="btn-mobile">
+          <i class="fas fa-hamburger"></i>
+        </button>
+        <div class="progress-bar"></div>
+      </div>
     </div>
   </header>
   <section class="user">
-    <div class="user-wrapper">
-      <div class="user-info">
-        <h1 class="user-title">Pavel Hancharou</h1>
-        <span class="user-subtitle">Junior Front End Developer</span>
-      </div>
-      <div class="user-avatar">
-        <img class="user-image"
-          src="https://avatars.githubusercontent.com/u/56205600?s=460&u=23f4bae9d73d56a9b839e5e2942957c620546419&v=4"
-          alt="user: Pavel Hancharou">
-      </div>
-    </div>
-  </section>
-  <section class="contact">
-    <div class="contact-wrapper">
-      <h2 class="contact-title">Contact info</h2>
-      <ul class="contact-list">
-        <li class="contact-list__item contact-item">
-          <img src="" alt="icon: e-mail" class="contact-item__icon">
-          <span class="contact-item__mail"></span>
-        </li>
-        <li class="contact-list__item contact-item">
-          <img src="" alt="icon: linkedin" class="contact-item__icon">
-          <span class="contact-item__linkedin"></span>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="summary">
-    <div class="summary-wrapper">
-      <h2 class="summary-title">Summary</h2>
-      <p class="summary-text">
-        My goal is to find a new job to work with interesting and job where I can develop my
-        skills working on various projects. I’d like to deal with people who can speak two or more languages. And I’d
-        like to do what I’m interested in - creation of something useful for people. Web-development attracts me by its
-        dynamic interfaces, menus, events. I mastered basic knowledge of HTML5, CSS3, JavaScript.
-      </p>
-      <p class="summary-text">
-        I achieve my goals. I learned German, lived and worked in Berlin for two years. I’m not
-        afraid of new challenges.
-      </p>
-      <p class="summary-text">
-        At my previous job I was able to learn quickly if new approaches or tasks were implemented
-        and even became the best employee of the month. Also I was a mentor for two new employees.
-      </p>
-    </div>
-  </section>
-  <section class="skills">
-    <div class="skills-wrapper">
-      <h2 class="skills-title">Skills</h2>
-      <ul class="skills-list">
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">JavaScript</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">React</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">Node.js</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">Git</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">SASS</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">BEM methodology</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">Webpack, Gulp</span>
-        </li>
-        <li class="skills-list__item skills-item">
-          <img src="" alt="icon: " class="skills-item__icon">
-          <span class="skills-item__description">ESLint</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="code">
-    <div class="code-wrapper">
-      <h2 class="code-title">Code</h2>
-      <span class="code-description">Simple ToDo List</span>
-      <pre>
-        <code>
-          &lt;body&gt;
-            &lt;header class="header"&gt;
-              &lt;form class="todo-control"&gt;
-                &lt;label&gt;&lt;input class="header-input" type="text" placeholder="What you want to do?"&gt;&lt;/label&gt;
-                &lt;button class="header-button" id="add"&gt;&lt;/button&gt;
-              &lt;/form&gt;
-            &lt;/header&gt;
-
-            &lt;div class="todo-container"&gt;
-              &lt;ul class="todo todo-list" id="todo"&gt;&lt;/ul&gt;
-              &lt;ul class="todo todo-completed" id="completed"&gt;&lt;/ul&gt;
-            &lt;/div&gt;
-
-            &lt;script src="script.js"&gt;&lt;/script&gt;
-          &lt;/body&gt;
-        </code>
-      </pre>
-      <pre>
-        <code>
-          'use strict';
-
-          const todoControl = document.querySelector('.todo-control'),
-            headerInput = document.querySelector('.header-input'),
-            todoList = document.querySelector('.todo-list'),
-            todoCompleted = document.querySelector('.todo-completed');
-
-          const todoData = localStorage.getItem('todo') ? JSON.parse(localStorage.getItem('todo')) : [];
-
-          const render = function () {
-            todoList.textContent = '';
-            todoCompleted.textContent = '';
-
-            todoData.forEach(function (item) {
-              const li = document.createElement('li');
-              li.classList.add('todo-item');
-
-              li.innerHTML = `&lt;span class="text-todo"&gt;` + item.value + `&lt;/span&gt;` +
-                `&lt;div class="todo-buttons"&gt;` +
-                `&lt;button class="todo-remove"&gt;&lt;/button&gt;` +
-                `&lt;button class="todo-complete"&gt;&lt;/button&gt;` +
-                `&lt;/div&gt;`;
-
-              if (item.completed) {
-                todoCompleted.append(li);
-                localStorage.setItem('todo', JSON.stringify(todoData));
-              } else {
-                todoList.append(li);
-                localStorage.setItem('todo', JSON.stringify(todoData));
-              }
-
-              const todoCompleteBtn = li.querySelector('.todo-complete');
-              todoCompleteBtn.addEventListener('click', function () {
-                item.completed = !item.completed;
-                render();
-              });
-
-              const todoRemoveBtn = li.querySelector('.todo-remove');
-              todoRemoveBtn.addEventListener('click', function () {
-                li.remove(li);
-                let index = todoData.indexOf(item);
-                if (index > -1) {
-                  todoData.splice(index, 1);
-                }
-                localStorage.clear();
-                render();
-              });
-            });
-          };
-
-          todoControl.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (headerInput.value !== '') {
-              const newTodo = {
-                value: headerInput.value,
-                completed: false
-              };
-              todoData.push(newTodo);
-              headerInput.value = '';
-
-              render();
-            }
-          });
-
-          render();
-        </code>
-      </pre>
-    </div>
-  </section>
-  <section class="experience">
-    <div class="experience-wrapper">
-      <h2 class="experience-title">Experience</h2>
-      <ul class="experience-list">
-        <li class="experience-list__item experience-item">
-          2021 Udemy - Node JS. Practice course (Express, Mongo, MySQL, GraphQl)
-          <div class="experience-item__links">
-            <a href="https://pure-lowlands-03741.herokuapp.com/" class="experience-item__link">App</a>
-            <a href="https://github.com/pavelhancharow/courses_app" class="experience-item__link">Code</a>
+    <div class="container">
+      <div class="user-wrapper">
+        <div class="user-info">
+          <div class="user-block">
+            <h1 class="user-title">Pavel Hancharou</h1>
+            <span class="user-subtitle">Junior Front-End Developer</span>
           </div>
-        </li>
-        <li class="experience-list__item experience-item">
-          2021 Udemy - JavaScript. Practice course (Advanced level)
-          <div class="experience-item__links">
-            <a href="https://pavelhancharow.github.io/udemy_js_project-2/dist/index.html"
-              class="experience-item__link">Landing</a>
-            <a href="https://github.com/pavelhancharow/udemy_js_project-2" class="experience-item__link">Code</a>
+          <div class="contact">
+            <h2 class="contact-title underline">Contact info</h2>
+            <ul class="contact-list">
+              <li class="contact-list__item contact-item">
+                <span class="contact-item__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <a href="https://goo.gl/maps/hQ4NjuTaJahF2Xet8" class="contact-item__link" target="_blank">Minsk,
+                  Belarus</a>
+              </li>
+              <li class="contact-list__item contact-item">
+                <span class="contact-item__icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <a href="mailto:pl.hancharou@gmail.com" class="contact-item__link">pl.hancharou@gmail.com</a>
+              </li>
+              <li class="contact-list__item contact-item">
+                <span class="contact-item__icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+                <a href="https://www.linkedin.com/in/pavel-hancharou-6611ba1a8/" class="contact-item__link"
+                  target="_blank">LinkedIn</a>
+              </li>
+              <li class="contact-list__item contact-item">
+                <span class="contact-item__icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <a href="https://github.com/pavelhancharow" class="contact-item__link" target="_blank">GitHub</a>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li class="experience-list__item experience-item">
-          2020 GLO Academy - Web start/JavaScript
-          <div class="experience-item__links">
-            <a href="https://pavelhancharou.ru/universal/" class="experience-item__link">Web start</a>
-            <a href="https://github.com/pavelhancharow/magazine-universal" class="experience-item__link">Code</a>
-            <a href="https://pavelhancharou.ru/fitness-club/" class="experience-item__link">JavaScript</a>
-            <a href="https://pavelhancharow.github.io/fitness-club/" class="experience-item__link">Code</a>
-          </div>
-        </li>
-        <li class="experience-list__item experience-item">
-          2020 SkillUp - Front End Developing
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="education">
-    <div class="education-wrapper">
-      <h2 class="education-title">Education</h2>
-      <ul class="education-list">
-        <li class="education-list__item education-item">
-          <span class="education-item__title">Belarusian National Technical University</span>
-          <span class="education-item__subtitle">Bachelor’s degree, Electromechanical Engineering</span>
-          <span class="education-item__year">2012-2018</span>
-        </li>
-        <li class="education-list__item education-item">
-          <span class="education-item__title">die Berliner Volkshochschulen</span>
-          <span class="education-item__subtitle">German course A2-B2</span>
-          <span class="education-item__year">2015-2016</span>
-        </li>
-        <li class="education-list__item education-item">
-          <span class="education-item__title">Minsk State Higher Radiotechnical College</span>
-          <span class="education-item__subtitle">Electronic computing facilities</span>
-          <span class="education-item__year">2007-2012</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="languages">
-    <div class="languages-wrapper">
-      <h2 class="languages-title">English</h2>
-      <div class="languages-block">
-        <span class="languages-block__english">English A2, currently I learn for B1</span>
-        <span class="languages-block__german">German B2</span>
+        </div>
+        <div class="user-avatar">
+          <img class="user-image"
+            src="https://avatars.githubusercontent.com/u/56205600?s=460&u=23f4bae9d73d56a9b839e5e2942957c620546419&v=4"
+            alt="user: Pavel Hancharou">
+        </div>
       </div>
     </div>
   </section>
+  <section class="summary" id="summary">
+    <div class="container">
+      <div class="summary-wrapper">
+        <h2 class="summary-title underline">Summary</h2>
+        <p class="summary-text">
+          My goal is to find a new job to work with interesting and job where I can develop my
+          skills working on various projects. I’d like to deal with people who can speak two or more languages. And I’d
+          like to do what I’m interested in - creation of something useful for people. Web-development attracts me by
+          its
+          dynamic interfaces, menus, events. I mastered basic knowledge of HTML5, CSS3, JavaScript.
+        </p>
+        <p class="summary-text">
+          I achieve my goals. I learned German, lived and worked in Berlin for two years. I’m not
+          afraid of new challenges.
+        </p>
+        <p class="summary-text">
+          At my previous job I was able to learn quickly if new approaches or tasks were implemented
+          and even became the best employee of the month. Also I was a mentor for two new employees.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="skills-wrapper">
+        <h2 class="skills-title underline">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon">
+              <use xlink:href="src/assets/img/logo-sprite.svg#js"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon">
+              <use xlink:href="src/assets/img/logo-sprite.svg#babel"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon react fs50">
+              <i class="fab fa-react"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#nodejs"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#mysql"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w70">
+              <use xlink:href="src/assets/img/logo-sprite.svg#npm"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon git fs50">
+              <i class="fab fa-git-alt"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon sass fs50">
+              <i class="fab fa-sass"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#less"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon">
+              <use xlink:href="src/assets/img/logo-sprite.svg#bem"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#webpack"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon gulp fs50">
+              <i class="fab fa-gulp"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#eslint"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon">
+              <use xlink:href="src/assets/img/logo-sprite.svg#js"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon">
+              <use xlink:href="src/assets/img/logo-sprite.svg#babel"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon react fs50">
+              <i class="fab fa-react"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#nodejs"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#mysql"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w70">
+              <use xlink:href="src/assets/img/logo-sprite.svg#npm"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon git fs50">
+              <i class="fab fa-git-alt"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon sass fs50">
+              <i class="fab fa-sass"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#less"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon">
+              <use xlink:href="src/assets/img/logo-sprite.svg#bem"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#webpack"></use>
+            </svg>
+          </li>
+          <li class="skills-list__item skills-item">
+            <span class="skills-item__icon gulp fs50">
+              <i class="fab fa-gulp"></i>
+            </span>
+          </li>
+          <li class="skills-list__item skills-item">
+            <svg class="skills-item__icon w90">
+              <use xlink:href="src/assets/img/logo-sprite.svg#eslint"></use>
+            </svg>
+          </li>
+        </ul>
+        <span id="arrow-left" class="slider-arrow prev">
+          <i class="fa fa-angle-left"></i>
+        </span>
+        <span id="arrow-right" class="slider-arrow next">
+          <i class="fa fa-angle-right"></i>
+        </span>
+      </div>
+    </div>
+  </section>
+  <section class="code" id="code">
+    <div class="container">
+      <div class="code-wrapper">
+        <h2 class="code-title underline">Code</h2>
+        <b class="code-description">Simple ToDo List</b>
+        <pre class="code-container">
+    <code class="code-style">
+    &lt;<i class="green">body</i>&gt;
+      &lt;<i class="green">header</i> <i class="blue">class</i>="<i class="d-blue">header</i>"&gt;
+        &lt;<i class="green">form</i> <i class="blue">class</i>="<i class="d-blue">todo-control</i>"&gt;
+          &lt;<i class="green">label</i>&gt;
+            &lt;<i class="green">input</i> <i class="blue">class</i>="<i class="d-blue">header-input</i>" <i class="blue">type</i>="<i class="d-blue">text</i>" <i class="blue">placeholder</i>="<i class="d-blue">What you want to do?</i>"&gt;
+          &lt;/<i class="green">label</i>&gt;
+          &lt;<i class="green">button</i> <i class="blue">class</i>="<i class="d-blue">header-button</i>" <i class="blue">id</i>="<i class="d-blue">add</i>"&gt;&lt;/<i class="green">button</i>&gt;
+        &lt;/<i class="green">form</i>&gt;
+      &lt;/<i class="green">header</i>&gt;
+      &lt;<i class="green">div</i> <i class="blue">class</i>="<i class="d-blue">todo-container</i>"&gt;
+        &lt;<i class="green">ul</i> <i class="blue">class</i>="<i class="d-blue">todo todo-list</i>" <i class="blue">id</i>="<i class="d-blue">todo</i>"&gt;&lt;/<i class="green">ul</i>&gt;
+        &lt;<i class="green">ul</i> <i class="blue">class</i>="<i class="d-blue">todo todo-completed</i>" <i class="blue">id</i>="<i class="d-blue">completed</i>"&gt;&lt;/<i class="green">ul</i>&gt;
+      &lt;/<i class="green">div</i>&gt;
+      &lt;<i class="green">script</i> <i class="blue">src</i>="<i class="d-blue">script.js</i>"&gt;&lt;/<i class="green">script</i>&gt;
+    &lt;/<i class="green">body</i>&gt;
+    </code>
+        </pre>
+        <pre class="code-container">
+    <code class="code-style">
+    <i class="d-blue">'use strict'</i>;
+
+    <i class="l-red">const</i> todoControl <i class="blue">=</i> document.<i class="purple">querySelector</i>(<i class="d-blue">'.todo-control'</i>),
+      headerInput <i class="blue">=</i> document.<i class="purple">querySelector</i>(<i class="d-blue">'.header-input'</i>),
+      todoList <i class="blue">=</i> document.<i class="purple">querySelector</i>(<i class="d-blue">'.todo-list'</i>),
+      todoCompleted <i class="blue">=</i> document.<i class="purple">querySelector</i>(<i class="d-blue">'.todo-completed'</i>);
+
+    <i class="l-red">const</i> todoData <i class="blue">=</i> localStorage.<i class="purple">getItem</i>(<i class="d-blue">'todo'</i>) ? <i class="blue">JSON</i>.<i class="purple">parse</i>(localStorage.<i class="purple">getItem</i>(<i class="d-blue">'todo'</i>)) : [];
+
+    <i class="l-red">const</i> <i class="purple">render</i> <i class="blue">=</i> <i class="l-red">function</i> () {
+      todoList.<i class="blue">textContent</i> <i class="blue">=</i> <i class="d-blue">''</i>;
+      todoCompleted.<i class="blue">textContent</i> <i class="blue">=</i> <i class="d-blue">''</i>;
+
+      todoData.forEach(<i class="l-red">function</i> (item) {
+        <i class="l-red">const</i> li <i class="blue">=</i> document.<i class="purple">createElement</i>(<i class="d-blue">'li'</i>);
+        li.<i class="blue">classList</i>.<i class="purple">add</i>(<i class="d-blue">'todo-item'</i>);
+
+        li.<i class="blue">innerHTML</i> <i class="blue">=</i> <i class=d-blue>`&lt;span class="text-todo"&gt;`</i> <i class="blue">+</i> item.<i class="blue">value</i> <i class="blue">+</i> <i class=d-blue>`&lt;/span&gt;`</i> <i class="blue">+</i>
+          <i class=d-blue>`&lt;div class="todo-buttons"&gt;`</i> <i class="blue">+</i>
+          <i class=d-blue>`&lt;button class="todo-remove"&gt;&lt;/button&gt;`</i> <i class="blue">+</i>
+          <i class=d-blue>`&lt;button class="todo-complete"&gt;&lt;/button&gt;`</i> <i class="blue">+</i>
+          <i class=d-blue>`&lt;/div&gt;`</i>;
+
+        <i class="l-red">if</i> (item.<i class="blue">completed</i>) {
+          todoCompleted.<i class="purple">append</i>(li);
+          localStorage.<i class="purple">setItem</i>(<i class="d-blue">'todo'</i>, <i class="blue">JSON</i>.<i class="purple">stringify</i>(todoData));
+        } <i class="l-red">else</i> {
+          todoList.<i class="purple">append</i>(li);
+          localStorage.<i class="purple">setItem</i>(<i class="d-blue">'todo'</i>, <i class="blue">JSON</i>.<i class="purple">stringify</i>(todoData));
+        }
+
+        <i class="l-red">const</i> todoCompleteBtn <i class="blue">=</i> li.<i class="purple">querySelector</i>(<i class="d-blue">'.todo-complete'</i>);
+        todoCompleteBtn.<i class="purple">addEventListener</i>(<i class="d-blue">'click'</i>, <i class="l-red">function</i> () {
+          item.<i class="blue">completed</i> <i class="blue">=</i> !item.<i class="blue">completed</i>;
+          <i class="purple">render</i>();
+        });
+
+        <i class="l-red">const</i> todoRemoveBtn <i class="blue">=</i> li.<i class="purple">querySelector</i>(<i class="d-blue">'.todo-remove'</i>);
+        todoRemoveBtn.<i class="purple">addEventListener</i>(<i class="d-blue">'click'</i>, <i class="l-red">function</i> () {
+          li.<i class="purple">remove</i>(li);
+          <i class="l-red">let</i> index <i class="blue">=</i> todoData.<i class="purple">indexOf</i>(item);
+          <i class="l-red">if</i> (index <i class="blue">> -1</i>) {
+            todoData.<i class="purple">splice</i>(index, <i class="blue">1</i>);
+          }
+          localStorage.<i class="purple">clear</i>();
+          <i class="purple">render</i>();
+        });
+      });
+    };
+
+    todoControl.<i class="purple">addEventListener</i>(<i class="d-blue">'submit'</i>, <i class="l-red">function</i> (e) {
+      e.<i class="purple">preventDefault</i>();
+      <i class="l-red">if</i> (headerInput.<i class="blue">value</i> !== <i class="d-blue">''</i>) {
+        <i class="l-red">const</i> newTodo <i class="blue">=</i> {
+          <i class="blue">value</i>: headerInput.<i class="blue">value</i>,
+          <i class="blue">completed</i>: <i class="blue">false</i>
+        };
+        todoData.<i class="purple">push</i>(newTodo);
+        headerInput.<i class="blue">value</i> <i class="blue">=</i> <i class="d-blue">''</i>;
+
+        <i class="purple">render</i>();
+      }
+    });
+
+    <i class="purple">render</i>();
+    </code>
+        </pre>
+      </div>
+    </div>
+  </section>
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="experience-wrapper">
+        <h2 class="experience-title">Experience</h2>
+        <ul class="experience-list">
+          <li class="experience-list__item experience-item">
+            <img src="./src/assets/img/projects/courses-store.png" alt="web project" class="experience-item__img">
+            <b class="experience-item__course">2021 Udemy - Node JS. Practice course (Express, Mongo, MySQL,
+              GraphQl).</b>
+            <div class="experience-item__links">
+              <a href="https://pure-lowlands-03741.herokuapp.com/" class="experience-item__link"
+                target="_blank">Project</a>
+              <a href="https://github.com/pavelhancharow/courses_app"
+                class="experience-item__link experience-item__link_code" target="_blank">Code</a>
+            </div>
+          </li>
+          <li class="experience-list__item experience-item">
+            <img src="./src/assets/img/projects/images.png" alt="web project" class="experience-item__img">
+            <b class="experience-item__course">2021 Udemy - JavaScript. Practice course (Advanced level).</b>
+            <div class="experience-item__links">
+              <a href="https://pavelhancharow.github.io/udemy_js_project-2/dist/index.html"
+                class="experience-item__link" target="_blank">Project</a>
+              <a href="https://github.com/pavelhancharow/udemy_js_project-2"
+                class="experience-item__link experience-item__link_code" target="_blank">Code</a>
+            </div>
+          </li>
+          <li class="experience-list__item experience-item">
+            <img src="./src/assets/img/projects/web-start.png" alt="web project" class="experience-item__img">
+            <b class="experience-item__course">2020 GLO Academy - Web start. <br>Thesis project.</b>
+            <div class="experience-item__links">
+              <a href="https://pavelhancharou.ru/universal/" class="experience-item__link" target="_blank">Project</a>
+              <a href="https://github.com/pavelhancharow/magazine-universal"
+                class="experience-item__link experience-item__link_code" target="_blank">Code</a>
+            </div>
+          </li>
+          <li class="experience-list__item experience-item">
+            <img src="./src/assets/img/projects/fitness.png" alt="web project" class="experience-item__img">
+            <b class="experience-item__course">2020 GLO Academy - JavaScript. <br>Thesis project.</b>
+            <div class="experience-item__links">
+              <a href="https://pavelhancharou.ru/fitness-club/" class="experience-item__link"
+                target="_blank">Project</a>
+              <a href="https://pavelhancharow.github.io/fitness-club/"
+                class="experience-item__link experience-item__link_code" target="_blank">Code</a>
+            </div>
+          </li>
+          <li class="experience-list__item experience-item">
+            <img src="./src/assets/img/projects/tour-plan.png" alt="web project" class="experience-item__img">
+            <b class="experience-item__course">2020 SkillUp - Front End Developing. <br>Thesis project.</b>
+            <div class="experience-item__links">
+              <a href="https://pavelhancharou.ru/besttour-plan/" class="experience-item__link"
+                target="_blank">Project</a>
+              <a href="https://github.com/pavelhancharow/tour-plan"
+                class="experience-item__link experience-item__link_code" target="_blank">Code</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <div class="container">
+      <div class="education-wrapper">
+        <h2 class="education-title underline">Education</h2>
+        <ul class="education-list">
+          <li class="education-list__item education-item">
+            <b class="education-item__title">Belarusian National Technical University</b>
+            <span class="education-item__subtitle">Bachelor’s degree, Electromechanical Engineering</span>
+            <i class="education-item__year">2012-2018</i>
+          </li>
+          <li class="education-list__item education-item">
+            <b class="education-item__title">die Berliner Volkshochschulen</b>
+            <span class="education-item__subtitle">German course A2-B2</span>
+            <i class="education-item__year">2015-2016</i>
+          </li>
+          <li class="education-list__item education-item">
+            <b class="education-item__title">Minsk State Higher Radiotechnical College</b>
+            <span class="education-item__subtitle">Electronic computing facilities</span>
+            <i class="education-item__year">2007-2012</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="languages" id="languages">
+    <div class="container">
+      <div class="languages-wrapper">
+        <h2 class="languages-title underline">English</h2>
+        <div class="languages-block">
+          <svg class="languages-block__flag" style="width: 40px; height: 20px">
+            <use xlink:href="src/assets/img/flags-sprite.svg#uk"></use>
+          </svg>
+          <span class="languages-block__english">English A2, currently I learn for B1.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-socials">
+          <a href="mailto:pl.hancharou@gmail.com" class="footer-icon" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pavel-hancharou-6611ba1a8/" class="footer-icon" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/pavelhancharow" class="footer-icon" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <b class="footer-copyright">© 2021 Pavel Hancharou.</b>
+      </div>
+    </div>
+  </footer>
+  <div class="m-menu">
+    <a class="m-menu__close" data-close>
+      <i class="far fa-times-circle"></i>
+    </a>
+    <nav class="m-nav">
+      <a href="#home" class="m-nav__link" data-close>Contact</a>
+      <a href="#summary" class="m-nav__link" data-close>Summary</a>
+      <a href="#skills" class="m-nav__link" data-close>Skills</a>
+      <a href="#code" class="m-nav__link" data-close>Code</a>
+      <a href="#experience" class="m-nav__link" data-close>Experience</a>
+      <a href="#education" class="m-nav__link" data-close>Education</a>
+      <a href="#languages" class="m-nav__link" data-close>Languages</a>
+    </nav>
+    <a href="#home" class="m-logo" data-close>
+      <img src="src/assets/img/logo-2.png" alt="icon: logo" class="m-logo__img">
+    </a>
+  </div>
+  <a href="#home" class="pageup">
+    <i class="far fa-arrow-alt-circle-up"></i>
+  </a>
+
+  <script src="https://kit.fontawesome.com/9b91936153.js" crossorigin="anonymous"></script>
+  <script type="module" src="src/js/main.js"></script>
 </body>
 
 </html>
