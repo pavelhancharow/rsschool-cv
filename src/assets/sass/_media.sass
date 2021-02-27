@@ -1,0 +1,161 @@
+@media (min-width: 993px)
+  .header
+    &-nav
+      &__link
+        &:hover::before
+          top: -7px
+          visibility: visible
+  .contact
+    &-item
+      &__link
+        &:hover::before
+          right: -17px
+          visibility: visible
+  .experience
+    &-item
+      &__link
+        &:hover
+          color: $body
+        &_code
+          &:hover
+            border-color: $body
+            color: $body
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+@media (max-width: 992px)
+  body
+    padding-top: 70px
+  .container
+    max-width: 720px
+  .header
+    &-logo
+      width: 140px
+      height: 70px
+    &-nav
+      &__link
+        font-size: 14px
+  .progress-bar
+    top: 70px
+  .user-avatar
+    width: 250px
+    height: 250px
+  .contact-title
+    width: 240px
+    background-color: rgba(255, 255, 255, 0.5)
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22)
+    border-radius: 10px
+  .slider
+    &-arrow
+      top: 20%
+      transform: translateY(-20%)
+  .next
+    right: 47%
+    transform: translateX(-47%)
+  .prev
+    left: 47%
+    transform: translateX(-47%)
+  .footer-socials
+    width: 15%
+  .m
+    &-logo
+      width: 78px
+      height: 70px
+@media (max-width: 767px)
+  h2
+    font-size: 34px
+    line-height: 44px
+  .container
+    max-width: 540px
+  .header-nav
+    display: none
+  .btn-mobile
+    display: flex
+  .user
+    &-title
+      font-size: 36px
+      line-height: 46px
+    &-avatar
+      width: 200px
+      height: 200px
+  .summary-wrapper
+    width: 100%
+  .code-container
+    max-height: 380px
+  .footer-socials
+    width: 22%
+@media (max-width: 576px)
+  body
+    font-size: 14px
+    line-height: 24px
+  section
+    padding: 30px 0
+  h2
+    font-size: 30px
+    line-height: 40px
+  .container
+    max-width: 94%
+  .user
+    &-title
+      font-size: 32px
+      line-height: 42px
+    &-avatar
+      width: 180px
+      height: 180px
+  .contact
+    margin-top: 40px
+  .code-style
+    font-size: 12px
+  .education-list
+    display: block
+  .experience-list__item
+    width: 307px
+@media (max-width: 490px)
+  h2
+    font-size: 28px
+    line-height: 38px
+  .user
+    &-title
+      font-size: 30px
+      line-height: 40px
+      max-width: 203px
+    &-avatar
+      width: 160px
+      height: 160px
+  .contact-title
+    width: 203px
+  .footer-socials
+    width: 30%
+@media (max-width: 425px)
+  h2
+    font-size: 22px
+    line-height: 32px
+  .container
+    max-width: 90%
+  .user
+    &-wrapper
+      align-items: start
+    &-title
+      font-size: 26px
+      line-height: 36px
+    &-avatar
+      width: 120px
+      height: 120px
+  .contact
+    margin-top: 30px
+@media (max-width: 375px)
+  .container
+    max-width: 86%
+  .user
+    &-wrapper
+      flex-direction: column
+    &-info
+      order: 1
+    &-title
+      line-height: 32px
+      max-width: 100%
+    &-avatar
+      margin-bottom: 15px
+@media (max-width: 320px)
+  .container
+    max-width: 86%

@@ -1,0 +1,44 @@
+.user
+  background-image: url(../src/assets/img/alps.png)
+  background-repeat: no-repeat
+  background-position: 25% 85%
+  background-size: cover
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-block
+    background-color: rgba(255, 255, 255, 0.5)
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22)
+    border-radius: 10px
+  &-title
+    margin-bottom: 12px
+    font-size: 40px
+    line-height: 50px
+  &-avatar
+    width: 300px
+    height: 300px
+  &-image
+    width: 100%
+    height: 100%
+    border-radius: 50%
+.contact
+  margin-top: 50px
+  &-item
+    &__icon
+      display: inline-block
+      margin-right: 5px
+    &__link
+      position: relative
+      &::before
+        content: ""
+        position: absolute
+        top: 50%
+        right: -27px
+        width: 11px
+        height: 11px
+        border-radius: 50%
+        background-color: #0DD7F7
+        transform: translateY(-50%)
+        visibility: hidden
+        transition: all .3s
